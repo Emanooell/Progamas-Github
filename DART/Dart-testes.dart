@@ -39,5 +39,4 @@ print("As notas do ${emanoel[0]} são ${emanoel[1]} e ${emanoel[2]},a média é 
 
 
 
-
 }
