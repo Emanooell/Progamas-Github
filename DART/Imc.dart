@@ -1,12 +1,13 @@
 import 'dart:io';
 void main(){
+  //truncate seleciona a parte exata de um numero. Exemplo: 25.05 = 25
   print("Olá, vamos calcular seu IMMC");
   print("Primeiramente, qual seu nome?");
   String? nome = stdin.readLineSync();
   print("Informe sua altura: ");
   String? altura_string = stdin.readLineSync();
   if(altura_string!= null){
-    double altura = double.parse(altura_string);
+    double altura = double.parse(altura_string); // Aqui estou convertendo um valor em String para inteiro
   
   print ("Agora informe seu peso: ");
   String? peso_string = stdin.readLineSync();
