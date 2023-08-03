@@ -1,38 +1,36 @@
 import 'dart:io';
 void main(){
   //truncate seleciona a parte exata de um numero. Exemplo: 25.05 = 25
-  print("Olá, vamos calcular seu IMMC");
+  print("Olá, vamos calcular seu IMC");
   print("Primeiramente, qual seu nome?");
   String? nome = stdin.readLineSync();
-  print("Informe sua altura: ");
-  String? altura_string = stdin.readLineSync();
-  if(altura_string!= null){
-    double altura = double.parse(altura_string); // Aqui estou convertendo um valor em String para inteiro
+  print("Agora informe a sua altura EX: 1.74 ");
+  String? altura_string = stdin.readLineSync();  if(altura_string!= null){
+    double altura = double.parse(altura_string); // Aqui estou convertendo um valor String para inteiro
   
-  print ("Agora informe seu peso: ");
+  print ("Agora informe seu peso EX: 72.7 ");
   String? peso_string = stdin.readLineSync();
   if (peso_string != null){
     double peso = double.parse(peso_string);
   
-  double mmc = peso / (altura * altura).truncate();
-  print(mmc);
+  double mmc = peso / (altura * altura);
   if(mmc < 18.5){
-    print("Você tem uma classificação de MAGREZA");
+    print(" $nome você tem uma classificação de MAGREZA");
   }
   else if(mmc < 25){
-    print("Você tem uma classificação de peso NORMAL");
+    print(" $nome você tem uma classificação de peso NORMAL");
   }
   else  if(mmc < 30){
-    print ("Você tem uma classifcação de SOBREPESO");
+    print ("$nome você tem uma classifcação de SOBREPESO");
   }
   else if (mmc < 35){
-    print ("Você tem uma classificação OBESIDADE - GRAU 1");
+    print ("$nome você tem uma classificação OBESIDADE - GRAU 1");
   }
   else if (mmc < 40){
-    print ("VOcê tem uma classificação OBESIDADE - GRAU 2");
+    print ("$nome você tem uma classificação OBESIDADE - GRAU 2");
   }
   else{
-    print ("Você tem uma classificação OBESIDADE GRAVE - GRAU 3");
+    print ("$nome você tem uma classificação OBESIDADE GRAVE - GRAU 3");
   }
 
 }
