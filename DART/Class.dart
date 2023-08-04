@@ -6,7 +6,7 @@ String sabor = "Doce e cítrica";
 int diasDeColheita = 25;
 bool isMadura;
 
-Fruta fruta01 = Fruta(nome, peso, cor, sabor, diasDeColheita);
+Fruta fruta01 = Fruta(nome, peso, cor, sabor, diasDeColheita); // Instanciando a varíavel Fruta em fruta01
 Fruta fruta02 = Fruta("Uva", 40, "Roxa", "Doce", 20);
 
 print(fruta01.sabor);
