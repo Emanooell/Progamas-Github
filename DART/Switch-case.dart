@@ -1,5 +1,6 @@
+import 'dart:io';
 void main(){
-  String DiadaSemana = "Segunda";
+  String? DiadaSemana = stdin.readLineSync();
   switch(DiadaSemana){
     case "Domingo":
     print("Hoje é Domingo, dia de descansar!");
