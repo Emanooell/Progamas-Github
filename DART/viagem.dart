@@ -31,12 +31,19 @@ class Viagem{
 }
 void visitar(String localVisita){
   registrosVisitados.add(localVisita);
+  _totalLocaisViajados +=1;
 }
 int get consultarTotalLocaisViajados{ // Aqui eu controlo como o numero da varíavel privada irá aparecer no outro código
-  return _totalLocaisViajados + 10;
+  return _totalLocaisViajados;
+}
+void set alterarLocaisVisitados(int novaQuantidade){
+  if(novaQuantidade < 10){
+    _totalLocaisViajados = novaQuantidade;
+    
+}else{
+  print("Você viajou para 10 novos lugares em um dia? Impossivel!");
+}
+
+
 }
 }
-
-
-
-
