@@ -1,4 +1,4 @@
-import "dart:io";
+
 
 void escolhendoCamisas(Camisas tipos){
   switch(tipos){
@@ -36,4 +36,4 @@ enum Camisas{
   roxa,
   marrom,
   rosa,
-}
+} 
