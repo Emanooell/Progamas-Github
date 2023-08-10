@@ -9,7 +9,7 @@ void main(){
 
   precoMarcas["NIKE"] = "Da marca Nike temos peças a partir de 300 reais";
   precoMarcas["ADIDAS"] = "Da marca Adidas temos peças a partir de 250 reais";
-  precoMarcas["BALENCIAGA"] = "Da marca Balenciaga temos peças a partir de 200 reais";
+  precoMarcas["BALENCIAGA"] = "Da marca Balenciaga temos peças a partir  de 200 reais";
  switch(marca){
   case "NIKE":
    print(precoMarcas["NIKE"]);
