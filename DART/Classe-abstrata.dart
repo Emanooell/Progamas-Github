@@ -1,4 +1,4 @@
-import 'Classes-herança.dart';
+import 'Class2.dart';
 
 void main(){
   Legumes macaxeira01 = Legumes("Macaxeira", 80, "Marrom", true);

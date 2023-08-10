@@ -1,4 +1,4 @@
-import 'Class.dart';
+
 
 void main(){
   Frutas banana01 = Frutas("Banana", 75, "Amarela", 40, true);

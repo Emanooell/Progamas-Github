@@ -1,9 +1,9 @@
 
 import 'dart:io';
 
-import 'questions/good_manners.dart';
+import 'good_manners.dart';
 import 'time_questions.dart';
-import 'timing/waiting_time.dart';
+import 'waiting_time.dart';
 
 void main() async{
   String kakoBot = 'KakoBOT:\n';
